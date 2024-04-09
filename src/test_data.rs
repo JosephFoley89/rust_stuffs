@@ -11,7 +11,7 @@ pub fn unordered_list_i32() -> [i32; 25] {
 	return list;
 }
 
-pub fn fibonacci_hash_u128() -> HashMap<u32, u128> {
+pub fn _fibonacci_hash_u128() -> HashMap<u32, u128> {
 	let mut map: HashMap<u32, u128> = HashMap::new();
     map.insert(0, 0);
     map.insert(1, 1);

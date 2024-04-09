@@ -1,15 +1,11 @@
 mod sort;
-mod search;
-mod fibonacci;
-mod conversion;
-mod temperature;
 mod test_data;
 mod tabular;
 
 fn main() {
     let test_array: [i32; 25] = test_data::unordered_list_i32();
-    let test_ordered_list: [i32; 25] = sort::bubble_sort(test_array);
-    let test_reveresed_list: [i32; 25] = sort::bubble_sort_reverse(test_array);
+    let test_ordered_list: [i32; 25] = sort::bubble_sort(test_array, false);
+    let test_reveresed_list: [i32; 25] = sort::bubble_sort(test_array, true);
     let mut tabular_list: Vec<tabular::Tabular> = vec![];
     let record_headers: Vec<&str> = vec![" Original", " Sorted", " Reversed"];
 
