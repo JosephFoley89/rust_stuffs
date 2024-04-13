@@ -21,3 +21,8 @@ pub fn bubble_sort(mut list: [i32; 25], reverse: bool) -> [i32; 25] {
 
     return list;
 }
+
+pub fn get_median(list: [i32; 25]) -> i32 {
+    let index = list.len() / 2;
+    return list[index];
+}

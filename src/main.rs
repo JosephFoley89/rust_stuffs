@@ -1,3 +1,5 @@
+use crate::sort::get_median;
+
 mod sort;
 mod test_data;
 mod tabular;
@@ -18,4 +20,5 @@ fn main() {
     }
 
     tabular::tabulate(record_headers, tabular_list);
+    print!("MEDIAN: {}", get_median(test_ordered_list));
 }
